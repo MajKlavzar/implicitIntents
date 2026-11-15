@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_blue"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Website Section -->
+            <EditText
+                android:id="@+id/website_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:hint="@string/edittext_uri"
+                android:inputType="textUri"
+                android:text="@string/edittext_uri"
+                android:textColor="@color/text_black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/open_website_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:onClick="openWebsite"
+                android:text="@string/button_uri"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/button_blue"
+                app:cornerRadius="24dp" />
+
+            <!-- Location Section -->
+            <EditText
+                android:id="@+id/location_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:hint="@string/edittext_location"
+                android:inputType="text"
+                android:text="@string/edittext_location"
+                android:textColor="@color/text_black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/open_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:onClick="openLocation"
+                android:text="@string/button_location"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/button_blue"
+                app:cornerRadius="24dp" />
+
+            <!-- Share Text Section -->
+            <EditText
+                android:id="@+id/share_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:autofillHints=""
+                android:hint="@string/edittext_share"
+                android:inputType="text"
+                android:text="@string/edittext_share"
+                android:textColor="@color/text_black"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/share_text_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="shareText"
+                android:text="@string/button_share"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/button_blue"
+                app:cornerRadius="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
