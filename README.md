@@ -36,7 +36,7 @@ implicitIntents/
 
 ---
 
-## 🚀 Getting Started
+## 🚀 How to Use
 
 1. Clone or open the project in **Android Studio**.
 2. Sync the project with **Gradle**.
