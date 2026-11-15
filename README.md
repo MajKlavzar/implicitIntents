@@ -34,30 +34,6 @@ implicitIntents/
 └── README.md
 ```
 
-### Component Overview
-
-```mermaid
-graph TD
-    Root[implicitIntents] --> App[app module]
-    App --> Manifest[AndroidManifest.xml]
-    App --> Src[Source Code]
-    App --> Res[Resources]
-
-    Src --> MainActivity[MainActivity.java]
-
-    Res --> Layout[layout/activity_main.xml]
-    Res --> Values[values/]
-
-    Values --> Colors[colors.xml]
-    Values --> Strings[strings.xml]
-    Values --> Themes[themes.xml]
-```
-
-- **`MainActivity.java`**: Contains intent handlers for opening websites, locations, and sharing text.
-- **`activity_main.xml`**: Layout XML containing text fields and buttons for user interaction.
-- **`colors.xml`**: Defines color resources used across the layout.
-- **`strings.xml`**: Holds string constants for default input values and button labels.
-
 ---
 
 ## 🚀 Getting Started
