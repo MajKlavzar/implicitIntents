@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText mWebsiteEditText;
     private EditText mLocationEditText;
+    private EditText mPhoneEditText;
     private EditText mShareTextEditText;
 
     @Override
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         mWebsiteEditText = findViewById(R.id.website_edittext);
         mLocationEditText = findViewById(R.id.location_edittext);
+        mPhoneEditText = findViewById(R.id.phone_edittext);
         mShareTextEditText = findViewById(R.id.share_edittext);
     }
 
@@ -62,6 +64,18 @@ public class MainActivity extends AppCompatActivity {
         } catch (ActivityNotFoundException e) {
             Log.d("ImplicitIntents", "Can't handle location intent!");
             Toast.makeText(this, "No app available to open location", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void dialNumber(View view) {
+        String phoneNumber = mPhoneEditText.getText().toString();
+        Uri phoneUri = Uri.parse("tel:" + phoneNumber);
+        Intent intent = new Intent(Intent.ACTION_DIAL, phoneUri);
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            Log.d("ImplicitIntents", "Can't handle dial intent!");
+            Toast.makeText(this, "No app available to dial number", Toast.LENGTH_SHORT).show();
         }
     }
 

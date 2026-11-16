@@ -8,6 +8,7 @@ An Android application demonstrating the use of **Implicit Intents** in Android 
 
 - 🌐 **Open Website**: Launches the default web browser to view the entered web address (`https://...`) using `Intent.ACTION_VIEW`.
 - 📍 **Open Location**: Opens a map or navigation app to search for the entered location using `geo:0,0?q=` intents.
+- 📞 **Dial Number**: Opens the phone dialer app with the entered phone number using `Intent.ACTION_DIAL`.
 - 📤 **Share Text**: Shares custom text with other applications using `ShareCompat.IntentBuilder` and system share sheets.
 
 ---

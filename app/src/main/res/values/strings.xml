@@ -4,6 +4,8 @@
     <string name="button_uri">OPEN WEBSITE</string>
     <string name="edittext_location">School Centre Nova Gorica</string>
     <string name="button_location">OPEN LOCATION</string>
+    <string name="edittext_phone">+386 5 330 46 00</string>
+    <string name="button_dial">DIAL NUMBER</string>
     <string name="edittext_share">Na ŠCNG razvijamo znanje za prihodnost.</string>
     <string name="button_share">SHARE THIS TEXT</string>
     <string name="share_text_with">Share text with</string>
